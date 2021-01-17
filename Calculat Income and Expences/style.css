@@ -1,0 +1,64 @@
+
+.form-control-red{
+    border-color:#f12b2b;
+}
+.form-control-red:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #f12b2b;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.add_btn_red{
+    
+    color: #f12b2b !important;
+  
+
+}
+.budget_income_percentage{
+    background: #fff;
+    color:#28a745;
+    padding: 2px;
+    border-radius: 15%;
+}
+ .budget_expenses_percentage{
+    background: rgb(216, 136, 136);
+    color: #f12b2b;
+    padding: 2px;
+    border-radius: 15%;
+}
+.item_percentage{
+    background: rgb(216, 136, 136);
+    color: #f12b2b;
+    margin-left: 5px;
+    border-radius: 15%;
+}
+
+
+
+
+.item:nth-of-type(odd){
+    background: rgba(102, 97, 97, 0.5);
+}
+
+body{
+    font-size: 16px;
+    font-weight: bold;
+}
+.item_value, .item_delete_btn{transition:0.3s;}
+
+.item_delete_btn{
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+    border: none;
+    display: none;
+}
+
+.item_delete_btn:focus{ outline: none;}
+.item_delete_btn:active{transform:translateX(2px);}
+.item:hover .item_delete_btn{display: block}
+.item:hover .item_value{transform: translateX(-20px)}

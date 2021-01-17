@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://kit.fontawesome.com/9f5d267c9e.js" crossorigin="anonymous"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Budgety</title>
+</head>
+<body>
+ <section class="container-fluid">
+     <section class="row mb-5">
+         <div class=" col-sm-6 border m-auto p-2 ">
+            <div class="budget-title text-center">
+                MassManager in <span class="budget_title_month">Decmber 2020</span>
+            </div>
+            <div class="budget_value text-center p-3">+ 20,550</div>
+            <div class="budget_head  rounded overflow-hidden">
+                <div class="budget_income p-2 d-flex bg-success">
+                    <div class="budget_income_text flex-fill">Income</div>
+                    <div class="budget_income_value   mr-2">+ 45,450</div>
+                    <div class="budget_income_percentage">51%</div>
+                </div>
+                <div class="budget_expenses p-2 d-flex bg-danger">
+                    <div class="budget_expenses_text flex-fill">Expenses</div>
+                    <dib class="budget_expenses_value mr-2">- 24,900</dib>
+                    <div class="budget_expenses_percentage">51%</div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- input section -->
+    <section class="row pb-4">
+        <form class="col-sm-10 col-md-6  m-auto">
+            <div class="form-row">
+
+                <div class="col-2">
+                    <select class="add_type form-control">
+                        <option value="inc" selected> + </option>
+                        <option value="exp"> -</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <input type="text" class="form-control add_description" placeholder="Add description">
+                </div>
+
+                <div class="col-2">
+                    <input type="number" class="form-control add_value" placeholder="Value">
+                </div>
+                
+                <div class="col-1">
+                    <button type="button" class="add_btn btn text-success "><i class="far fa-check-circle "></i></button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+<section class="border p-2">
+    <section class="row  m-auto hader-section">
+            <div class="col"><h2 class="income_title text-success">Income</h2></div>
+          
+            <div class="col">  <h2 class="expenses_title text-danger">Expenses</h2></div>
+      
+        </section>
+   
+    <section class="inc-exp-container row pt-2 list-section">
+        <div class="income col col-sm-6 col-md-5">
+            <div class="income_list">
+
+
+                    <!-- <div class="item p-2 d-flex" id="inc-0">
+                        <div class="item_description flex-fill">Income</div>
+                        <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                        <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                    </div>
+                    <div class="item p-2 d-flex" id="inc-1">
+                            <div class="item_description flex-fill">Income</div>
+                            <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                            <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                    </div>
+                    <div class="item p-2 d-flex" id="inc-2">
+                            <div class="item_description flex-fill">Income</div>
+                            <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                            <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                    </div> -->
+
+
+            </div>
+        </div>
+        <div class="expenses col col-sm-6 col-md-5">
+           
+              
+                <div class="expenses_list">
+
+
+
+                        <!-- <div class="item p-2 d-flex" id="exp-0">
+                            <div class="item_description flex-fill">Income</div>
+                            <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                            <div class="item_percentage">51%</div>
+                            <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div>
+                        <div class="item p-2 d-flex" id="exp-1">
+                                <div class="item_description flex-fill">Income</div>
+                                <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                                <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div>
+                        <div class="item p-2 d-flex" id="exp-2">
+                                <div class="item_description flex-fill">Income</div>
+                                <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                                 <div class="item_percentage">51%</div>
+                                <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div> -->
+
+
+                </div>
+            </div>
+    </section>
+</section>
+<section class="border p-2 mt-2">
+        <div class="header"><div class="col-6 m-auto border-bottom"><h2 class="income_title text-danger text-center">Delete Item List</h2></div> </div>
+        <section class="row  m-auto hader-section">
+           
+                <div class="col"><h2 class="income_title text-success">Income</h2></div>
+              
+                <div class="col">  <h2 class="expenses_title text-danger">Expenses</h2></div>
+          
+            </section>
+       
+        <section class="inc-exp-container row pt-2 list-section">
+            <div class="income col col-sm-6 col-md-5">
+                <div class="del_income_list">
+    
+    
+                        <!-- <div class="item p-2 d-flex" id="inc-0">
+                            <div class="item_description flex-fill">Income</div>
+                            <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                            <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div>
+                        <div class="item p-2 d-flex" id="inc-1">
+                                <div class="item_description flex-fill">Income</div>
+                                <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                                <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div>
+                        <div class="item p-2 d-flex" id="inc-2">
+                                <div class="item_description flex-fill">Income</div>
+                                <div class="item_value  justify-content-end text-success">+ 45,450</div>
+                                <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                        </div> -->
+    
+    
+                </div>
+            </div>
+            <div class="expenses col col-sm-6 col-md-5">
+               
+                  
+                    <div class="del_expenses_list">
+    
+    
+    
+                            <!-- <div class="item p-2 d-flex" id="exp-0">
+                                <div class="item_description flex-fill">Income</div>
+                                <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                                <div class="item_percentage">51%</div>
+                                <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                            </div>
+                            <div class="item p-2 d-flex" id="exp-1">
+                                    <div class="item_description flex-fill">Income</div>
+                                    <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                                    <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                            </div>
+                            <div class="item p-2 d-flex" id="exp-2">
+                                    <div class="item_description flex-fill">Income</div>
+                                    <div class="item_value  justify-content-end text-danger">+ 45,450</div>
+                                     <div class="item_percentage">51%</div>
+                                    <div class="item_delete"><button class="item_delete_btn"><i class="fas fa-times"></i></button></div>
+                            </div> -->
+    
+    
+                    </div>
+                </div>
+        </section>
+    </section>
+
+
+
+</section>
+    
+
+<script src="app.js"></script>
+</body>
+</html>
